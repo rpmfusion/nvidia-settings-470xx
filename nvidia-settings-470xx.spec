@@ -2,8 +2,8 @@
 
 Name:           %{appname}-470xx
 Epoch:          3
-Version:        470.74
-Release:        2%{?dist}
+Version:        470.82.00
+Release:        1%{?dist}
 
 License:        GPLv2+
 Summary:        Configure the NVIDIA 470xx series graphics driver
@@ -33,7 +33,6 @@ BuildRequires:  mesa-libEGL-devel
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  pkgconfig(dbus-1)
 
-Conflicts:      %{appname}-340xx
 Conflicts:      %{appname}-390xx
 Conflicts:      %{appname}
 
@@ -105,6 +104,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Sat Oct 30 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.82.00-1
+- Updated to version 470.82.00.
+
 * Fri Oct 29 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.74-2
 - Extracted to a separate legacy LTS branch.
 
