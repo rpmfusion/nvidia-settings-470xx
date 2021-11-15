@@ -2,7 +2,7 @@
 
 Name:           %{appname}-470xx
 Epoch:          3
-Version:        470.82.00
+Version:        470.86
 Release:        1%{?dist}
 
 License:        GPLv2+
@@ -104,6 +104,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Mon Nov 15 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.86-1
+- Updated to version 470.86.
+
 * Sat Oct 30 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.82.00-1
 - Updated to version 470.82.00.
 
