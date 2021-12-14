@@ -2,14 +2,14 @@
 
 Name:           %{appname}-470xx
 Epoch:          3
-Version:        470.86
+Version:        470.94
 Release:        1%{?dist}
 
 License:        GPLv2+
 Summary:        Configure the NVIDIA 470xx series graphics driver
-URL:            https://download.nvidia.com/XFree86/%{appname}
+URL:            https://github.com/NVIDIA/%{appname}
 
-Source0:        %{url}/%{appname}-%{version}.tar.bz2
+Source0:        %{url}/archive/%{version}/%{appname}-%{version}.tar.gz
 Source1:        %{name}-user.desktop
 Source2:        %{name}.metainfo.xml
 
@@ -104,6 +104,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Mon Dec 13 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.94-1
+- Updated to version 470.94.
+
 * Mon Nov 15 2021 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.86-1
 - Updated to version 470.86.
 
