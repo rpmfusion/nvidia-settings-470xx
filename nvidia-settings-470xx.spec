@@ -3,7 +3,7 @@
 Name:           %{appname}-470xx
 Epoch:          3
 Version:        470.103.01
-Release:        2%{?dist}
+Release:        3%{?dist}
 
 License:        GPLv2+
 Summary:        Configure the NVIDIA 470xx series graphics driver
@@ -104,6 +104,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Tue Apr 05 2022 Leigh Scott <leigh123linux@gmail.com> - 3:470.103.01-3
+- Fix appdata
+
 * Thu Feb 10 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3:470.103.01-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
