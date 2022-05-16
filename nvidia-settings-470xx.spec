@@ -107,6 +107,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 * Mon May 16 2022 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.129.06-1
 - Updated to version 470.129.06.
 
+* Tue Apr 05 2022 Leigh Scott <leigh123linux@gmail.com> - 3:470.103.01-3
+- Fix appdata
+
 * Thu Feb 10 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3:470.103.01-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
