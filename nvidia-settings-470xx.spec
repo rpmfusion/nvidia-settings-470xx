@@ -2,7 +2,7 @@
 
 Name:           %{appname}-470xx
 Epoch:          3
-Version:        470.141.03
+Version:        470.161.03
 Release:        1%{?dist}
 
 License:        GPLv2+
@@ -104,6 +104,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Tue Nov 29 2022 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.161.03-1
+- Updated to version 470.161.03.
+
+* Mon Aug 08 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3:470.141.03-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
+  5.1
+
 * Tue Aug 02 2022 Vitaly Zaitsev <vitaly@easycoding.org> - 3:470.141.03-1
 - Updated to version 470.141.03.
 
