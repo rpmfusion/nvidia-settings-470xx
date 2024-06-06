@@ -2,7 +2,7 @@
 
 Name:           %{appname}-470xx
 Epoch:          3
-Version:        470.239.06
+Version:        470.256.02
 Release:        1%{?dist}
 
 License:        GPLv2+
@@ -104,6 +104,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %{_mandir}/man1/%{appname}.1.*
 
 %changelog
+* Thu Jun 06 2024 Sérgio Basto <sergio@serjux.com> - 3:470.256.02-1
+- Update nvidia-settings-470xx to 470.256.02
+
 * Mon Apr 15 2024 Sérgio Basto <sergio@serjux.com> - 3:470.239.06-1
 - Update nvidia-settings-470xx to 470.239.06
 
